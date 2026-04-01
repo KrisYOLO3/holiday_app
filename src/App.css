@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+}
+
+ul{
+  list-style: none;
+}
+
+:root {
+  --bg: #010f1d;
+  --surface: #0f2850;
+  --surface-soft: #17375d;
+  --text: #e9f1ff;
+  --text-muted: #a7b8d2;
+  --accent: #4eb1ff;
+  --accent-2: #7de1ff;
+  --error: #ff6477;
+}
+
+body,
+html,
+#root {
+  min-height: 100%;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 20%, #203f64 0%, var(--bg) 55%);
+}
+
+.app {
+  width: 70%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.panel {
+  background: linear-gradient(140deg, var(--surface-soft), var(--surface));
+  border: 1px solid rgba(120, 156, 210, 0.26);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  margin-bottom: 10px;
+}
+
+select {
+  border: 1px solid rgba(165, 187, 220, 0.45);
+  background: rgba(11, 29, 53, 0.78);
+  color: var(--text);
+  border-radius: 9px;
+  padding: 10px 12px;
+  min-width: 180px;
+  width: 200px;
+  outline: none;
+  margin: 10px 0 10px;
+}
+
+select {
+  border: 1px solid rgba(165, 187, 220, 0.45);
+  background: rgba(11, 29, 53, 0.78);
+  color: var(--text);
+  border-radius: 9px;
+  padding: 10px 12px;
+  min-width: 180px;
+  outline: none;
+}
+
+.result {
+  background: rgba(20, 44, 79, 0.82);
+  border-radius: 16px;
+  border: 1px solid rgba(122, 163, 221, 0.22);
+  padding: 16px;
+}
+
+.holidays-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.holiday-card {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(44, 79, 121, 0.95), rgba(34, 57, 92, 0.95));
+  border: 1px solid rgba(104, 162, 244, 0.3);
+  padding: 12px 12px 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin: 10px;
+  flex: 0 1 calc(33% - 20px);
+  height: 80px;
+}
+
+.holiday-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.4);
+}
+
+.upcoming-holidays{
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(44, 79, 121, 0.95), rgba(34, 57, 92, 0.95));
+  border: 1px solid rgba(104, 162, 244, 0.3);
+  padding: 30px 12px 26px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin: 10px;
+  height: 120px;
+  border-color: var( --accent-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upcoming-holidays:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.4);
+}
