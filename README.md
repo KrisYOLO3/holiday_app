@@ -1,5 +1,7 @@
-Holiday Explorer
+# Holiday Explorer
 Holiday Explorer is a sleek React application that allows users to discover public holidays across different countries. It dynamically fetches global country data and filters upcoming holidays for the current year using the OpenHolidays API
+
+# Features
 
 Dynamic Country Selection: Fetches a real-time list of countries and allows users to switch between them via a searchable dropdown.
 
@@ -15,7 +17,7 @@ Implements Loading states for better User Experience.
 
 Localized Date Formatting: Utilizes the Intl.DateTimeFormat API for clean, readable date presentation.
 
-Tech Stack
+# Tech Stack
 Framework: React (Functional Components, Hooks)
 
 Language: TypeScript (Custom Types for API responses)
